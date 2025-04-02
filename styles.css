@@ -359,21 +359,19 @@ td {
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-/* Hover effect */
 .organizer-card:hover {
   background-color: #003366;
   color: white;
   transform: scale(1.05);
 }
 
-/* Ensure text inside changes to white on hover */
 .organizer-card:hover h2,
 .organizer-card:hover p,
 .organizer-card:hover a {
   color: white;
 }
 
-/* Final speakers styling*/
+/* Speakers styling*/
 
 .speakers-header {
   color: rgb(0, 0, 0);
@@ -410,14 +408,12 @@ td {
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-/* Hover effect */
 .speakers-card:hover {
   background-color: #003366;
   color: white;
   transform: scale(1.05);
 }
 
-/* Ensure text inside changes to white on hover */
 .speakers-card:hover h2,
 .speakers-card:hover p,
 .speakers-card:hover a {
@@ -427,4 +423,44 @@ td {
 .speakers-card img {
   width: 100%;
   border-radius: 8px;
+}
+/* Registration Styling*/
+.registration {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.registration h3 {
+  font-size: 20px;
+  color: #007bff; /* Blue heading */
+  margin-bottom: 10px;
+}
+
+.registration p {
+  font-size: 16px;
+  color: #555;
+}
+
+.registration a {
+  color: #28a745; /* Green links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registration a:hover {
+  text-decoration: underline;
+}
+
+.benefits {
+  list-style: circle;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.benefit-item {
+  font-size: 14px;
+  padding: 5px;
 }
