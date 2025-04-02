@@ -1,0 +1,459 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+/* Global reset: Remove default margin, padding, and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Using Poppins font */
+}
+
+/* Styling the navigation bar */
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  /*background: linear-gradient(to right, #0072ff, #6c00ff, #ff7300);*/
+  background-color: #0072ff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap; /* Allow wrapping in smaller screens */
+}
+/**************** main DIV *****************************/
+.main_div {
+  width: 100%; /* Full width */
+  height: 400px; /* Set a fixed height */
+  background-image: url("images/Tunis.jpg"); /* Path to the image */
+  background-size: cover; /* Scale the image to cover the div */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+#title_p {
+  color: rgb(246, 250, 250);
+  font-size: x-large;
+}
+/* Logo inside the navigation */
+nav .logo {
+  text-decoration: none;
+  color: #fff; /* White text */
+  font-size: 35px;
+  font-weight: 600;
+}
+
+/* Navigation menu (unordered list) */
+nav ul {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  list-style: none; /* Removes bullet points */
+}
+
+/* Each list item in the navigation */
+nav ul li {
+  margin: 0 5px;
+}
+
+/* Links inside the navigation items */
+nav ul li a {
+  color: #f2f2f2; /* Light grey text */
+  text-decoration: none; /* Removes underline */
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px; /* Padding around links */
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Active and hover states for the links */
+nav ul li a.active,
+nav ul li a:hover {
+  color: #111; /* Dark text color on hover/active */
+  background: #fff; /* White background */
+}
+
+/* Menu button for mobile view (hidden by default) */
+nav .menu-btn i {
+  color: #fff; /* White icon */
+  font-size: 22px;
+  cursor: pointer; /* Changes cursor to pointer */
+  display: none; /* Hidden initially */
+}
+
+/* Hides the checkbox input */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Media query for screens with max width of 1000px */
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px; /* Adjusts padding for smaller screens */
+  }
+}
+
+/* Media query for screens with max width of 920px (Mobile view) */
+@media (max-width: 920px) {
+  /* Display menu button on smaller screens */
+  nav .menu-btn i {
+    display: block;
+  }
+
+  /* Change menu icon to 'X' when clicked */
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d"; /* Unicode for Font Awesome's close icon */
+  }
+
+  /* Navigation menu becomes a full-screen vertical menu */
+  nav ul {
+    position: fixed;
+    top: 80px; /* Start below the navigation bar */
+    left: -100%; /* Initially hidden */
+    background: #111; /* Dark background */
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease; /* Smooth slide-in animation */
+  }
+
+  /* Slide in the menu when the checkbox is checked */
+  #click:checked ~ ul {
+    left: 0; /* Menu slides in from the left */
+  }
+
+  /* Full-width list items in mobile view */
+  nav ul li {
+    width: 100%;
+    margin: 40px 0; /* Spacing between menu items */
+  }
+
+  /* Links expand to full width and animate into view */
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%; /* Hidden initially */
+    display: block;
+    font-size: 20px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Smoother animation curve */
+  }
+
+  /* Links slide into place when the checkbox is checked */
+  #click:checked ~ ul li a {
+    margin-left: 0;
+  }
+
+  /* Hover and active states in mobile view */
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none; /* Remove background */
+    color: rgb(231, 247, 10); /* Bright yellow color on hover */
+  }
+}
+
+/* Styling for the content below the navigation bar */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center content */
+  text-align: center;
+  z-index: -1; /* Ensure it's behind the navigation */
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b; /* Dark text */
+}
+
+/* Styling for the content divs */
+.content div {
+  font-size: 40px; /* Large text */
+  font-weight: 700;
+}
+
+/*******SPEAKERS STYLE*******/
+.h1_speakers {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px; /* Space between nav bar and h1 */
+  margin-left: 20px; /* Align h1 with the profile container */
+}
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1500px;
+  margin: 20px auto 0 20px; /* Move container to the left and add space between h1 and container */
+}
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.profile-info {
+  flex: 1;
+}
+.profile-info h2 {
+  color: #1f5f8b;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.profile-info h3 {
+  color: #555;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.profile-bio {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Venue styling*/
+/* Venue Header - Large Full-Width Background */
+.venue-header {
+  text-align: center;
+  padding: 180px 20px;
+  background: url("images/tbs.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.venue-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+  z-index: 1;
+}
+
+.venue-header h2,
+.venue-header p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Venue Details Section - Full Width */
+.venue-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Venue Info Box */
+.venue-info {
+  background: rgba(210, 241, 250, 0.9);
+  color: black;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Google Map - Full Width */
+.venue-map {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+.map-link {
+  color: blue; /* Makes the text blue */
+  font-weight: bold; /* Makes the text bold */
+  font-size: large;
+  text-decoration: none; /* Removes the underline */
+}
+
+.map-link:hover {
+  text-decoration: underline; /* Adds underline only when hovered */
+}
+#venue-description {
+  text-align: left;
+}
+.directions {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 30px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.directions h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.transport-method {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.transport-method h3 {
+  font-size: 20px;
+  color: #007bff; /* Blue heading */
+  margin-bottom: 10px;
+}
+
+.transport-method p {
+  font-size: 16px;
+  color: #555;
+}
+
+.transport-method a {
+  color: #28a745; /* Green links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.transport-method a:hover {
+  text-decoration: underline;
+}
+/* Program styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  border: 1px solid #003366;
+  padding: 15px;
+  text-align: center;
+}
+th {
+  background-color: #003366;
+  color: white;
+  font-size: 18px;
+}
+td {
+  background-color: #f0f8ff;
+  font-size: 16px;
+  color: #003366;
+}
+.session {
+  background-color: #87cefa; /* Light blue for sessions */
+  font-weight: bold;
+}
+.break {
+  background-color: #b0e0e6; /* Pale blue for breaks */
+  font-style: italic;
+}
+/* Organizers styling */
+.organizers-header {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.organizers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.organizer-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.organizer-card {
+  background-color: #ffffff;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.organizer-card:hover {
+  background-color: #003366;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Ensure text inside changes to white on hover */
+.organizer-card:hover h2,
+.organizer-card:hover p,
+.organizer-card:hover a {
+  color: white;
+}
+
+/* Final speakers styling*/
+
+.speakers-header {
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.speakers-container {
+  display: flex;
+  justify-content: center;
+}
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.lecturers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+}
+
+.speakers-card {
+  background-color: #ffffff;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.speakers-card:hover {
+  background-color: #003366;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Ensure text inside changes to white on hover */
+.speakers-card:hover h2,
+.speakers-card:hover p,
+.speakers-card:hover a {
+  color: white;
+}
+
+.speakers-card img {
+  width: 100%;
+  border-radius: 8px;
+}

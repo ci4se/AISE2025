@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- JV Source Codes | JVCodes.Com -->
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Character encoding declaration for UTF-8 -->
+    <meta charset="utf-8" />
+
+    <!-- Page title -->
+    <title>AI4SE</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome library for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Ensures proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- Navigation bar starts here -->
+    <div id="navbar-container"></div>
+
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+    </script>
+    <!-- End of navigation bar -->
+
+    <!-- Main content section -->
+    <section class="venue-section">
+      <!-- Venue Header with Background Image -->
+      <div class="venue-header">
+        <h2>Venue</h2>
+        <p>
+          Explore the <strong>venue of AI4SE 2025</strong>: Tunis Business
+          School (University of Tunis). <br />
+          In this section, you will find directions and useful tips on how to
+          reach it.
+        </p>
+      </div>
+
+      <!-- Venue Details Section -->
+      <div class="venue-details">
+        <div class="venue-info">
+          <h3><em>Tunis Business School, University of Tunis</em></h3>
+          <p><strong>Bir El Kassaa, Tunis</strong></p>
+          <p>
+            <a href="https://maps.google.com" target="_blank" class="map-link"
+              >Open map</a
+            >
+            <br />
+            <a href="#directions" class="map-link">Get directions</a>
+          </p>
+          <p id="venue-description">
+            Tunis Business School, a pioneering institution at the University of
+            Tunis that has been shaping futures since its inception on October
+            25th, 2010. <br />
+            As the first and only public business school in Tunisia to utilize
+            English as its primary language of instruction and adopt the US
+            higher education academic system, Tunis Business School stands as a
+            beacon of innovation and global learning. <br />
+            The school is situated in <b>Tunis</b>, the capital of
+            <b>Tunisia</b>.
+          </p>
+          <!-- Embedded Google Map -->
+          <div class="venue-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.671374842793!2d10.20912!3d36.73015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34abcd12345%3A0xa1b2c3d4e5f6g7h8!2sTunis%20Business%20School!5e0!3m2!1sen!2stn!4v1234567890"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="directions" class="directions">
+      <h2>How to Reach the Venue</h2>
+
+      <div class="transport-method">
+        <h3>By Bus</h3>
+        <p>
+          You can take bus number 47 from the 'Terminus Métro TGM Sud' station
+          in Tunis, which will take you to the bus station in Mourouj 4. <br />
+          From there, you can take a taxi to reach TBS, with the fare
+          approximately 4 TND (around 1.3 USD).
+        </p>
+        <p>
+          You can purchase single or multiple bus tickets with cash at the bus
+          station
+        </p>
+      </div>
+
+      <div class="transport-method">
+        <h3>By Metro</h3>
+        <p>
+          You can take metro number 1 from the Barcelona metro station in Tunis,
+          which will take you to the metro station in Mourouj 4. <br />
+          From there, you can take a taxi to reach TBS, with the fare
+          approximately 4 TND (around 1.3 USD).
+        </p>
+        <p>
+          You can purchase single or multiple metro tickets with cash at the
+          Barcelona metro station.
+        </p>
+      </div>
+
+      <div class="transport-method">
+        <h3>By Taxi</h3>
+        <p>
+          You can take a taxi from anywhere to reach TBS. From the city center
+          of Tunis, the fare is approximately 12 TND (around 3.9 USD)
+        </p>
+      </div>
+      <div class="transport-method">
+        <h3>By Chauffeured Car / Car-Sharing</h3>
+        <p>
+          You can use websites like
+          <a href="https://coccinelle.tn/" target="_blank">coccinelle</a> to
+          rent a car or minibus with a chauffeur, either for yourself or to
+          share with others.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

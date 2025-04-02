@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- JV Source Codes | JVCodes.Com -->
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Character encoding declaration for UTF-8 -->
+    <meta charset="utf-8" />
+
+    <!-- Page title -->
+    <title>AI4SE</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome library for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Ensures proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="navbar-container"></div>
+
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+    </script>
+    <!-- End of navigation bar -->
+
+    <div class="organizers-header">
+      <h1>The Organizers</h1>
+    </div>
+
+    <section class="organizers">
+      <div class="organizer-card">
+        <img src="images/Wiem2.jpg" alt="Pr. Mohamed Wiem Mkaouer" />
+        <h2>Pr. Mohamed Wiem Mkaouer</h2>
+        <p>
+          Associate Professor, Graduate Program Director of Artificial
+          Intelligence and Software Engineering, University of Michigan-Flint
+        </p>
+        <p>Email: <a href="mailto:mmkaouer@umich.edu">mmkaouer@umich.edu</a></p>
+
+        <a
+          href=" https://directory.umflint.edu/computer-science-engineering-and-physics/mmkaouer
+        "
+          class="website-btn"
+          target="_blank"
+        >
+          <i class="fas fa-globe"></i> Website</a
+        >
+      </div>
+
+      <div class="organizer-card">
+        <img src="images/montassar.jpg" alt="Dr. Montassar Ben Messaoud" />
+        <h2>Dr. Montassar Ben Messaoud</h2>
+        <p>Assistant Professor, Tunis Business School, Tunisia</p>
+        <p>
+          Email:
+          <a href="mailto:montassar.benmessaoud@tbs.u-tunis.tn"
+            >montassar.benmessaoud<br />
+            @tbs.u-tunis.tn</a
+          >
+        </p>
+        <a
+          href="https://tunis-business-school.tn/member/montassar-ben-messaoud/
+        "
+          class="website-btn"
+          target="_blank"
+        >
+          <i class="fas fa-globe"></i> Website</a
+        >
+      </div>
+
+      <div class="organizer-card">
+        <img src="images/Rihab.png" alt="Dr. Rihab Bouslama" />
+        <h2>Dr. Rihab Bouslama</h2>
+        <p>Assistant Professor, Tunis Business School, Tunisia</p>
+        <p>
+          Email:
+          <a href="mailto:rihab.bouslama@tbs.u-tunis.tn"
+            >rihab.bouslama@tbs.u-tunis.tn</a
+          >
+        </p>
+        <a
+          href="https://tunis-business-school.tn/member/rihab-bouslama/
+      "
+          class="website-btn"
+          target="_blank"
+        >
+          <i class="fas fa-globe"></i> Website</a
+        >
+      </div>
+
+      <div class="organizer-card">
+        <img src="images/Mehdi.jpg" alt="Dr. Mehdi Khouja" />
+        <h2>Dr. Mehdi Khouja</h2>
+        <p>Assistant Professor, Tunis Business School, Tunisia</p>
+        <p>
+          Email:
+          <a href="mailto:mehdi.khouja@tunis-business-school.tn"
+            >mehdi.khouja@tunis-business-school.tn</a
+          >
+        </p>
+        <a
+          href=" https://tunis-business-school.tn/member/mehdi-khouja/
+      "
+          class="website-btn"
+          target="_blank"
+        >
+          <i class="fas fa-globe"></i> Website</a
+        >
+      </div>
+    </section>
+  </body>
+</html>

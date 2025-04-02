@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- JV Source Codes | JVCodes.Com -->
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Character encoding declaration for UTF-8 -->
+    <meta charset="utf-8" />
+
+    <!-- Page title -->
+    <title>AI4SE</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome library for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Ensures proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="navbar-container"></div>
+
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        });
+    </script>
+    <!-- End of navigation bar -->
+
+    <h1>Summer School Program</h1>
+    <table>
+        <tr>
+            <th>Time / Date</th>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+        </tr>
+        <tr>
+          <td>8:30 – 10:30</td>
+          <td class="session">Registration & Welcome Ceremony</td>
+          <td class="session">Emna Ksontini - "The Economics of Refactoring: Cost, Benefit, and Technical Debt Reduction"</td>
+          <td class="session">Moataz Chouchen - "The Role of Explainable AI in Trustworthy Software Development"</td>
+      </tr>
+      <tr>
+          <td>10:30 – 11:00</td>
+          <td class="break">Coffee Break</td>
+          <td class="break">Coffee Break</td>
+          <td class="break">Coffee Break</td>
+      </tr>
+      <tr>
+          <td>11:00 – 13:00</td>
+          <td class="session">Ali Ouni - "AI-Powered Software Engineering: The Future of Intelligent Code Development"</td>
+          <td class="session">Nahla Ben Amor - "From Ambiguity to Assurance: Handling Uncertainty in Software Design and Development"</td>
+          <td class="session">Hands-on Workshop</td>
+      </tr>
+      <tr>
+          <td>13:00 – 14:00</td>
+          <td class="break">Lunch</td>
+          <td class="break">Lunch</td>
+          <td class="break">Lunch</td>
+      </tr>
+      <tr>
+          <td>14:00 – 16:00</td>
+          <td class="session">Slim Bechikh - "Beyond Single Metrics: Multi-Objective Optimization for Sustainable and Scalable Software"</td>
+          <td class="session">Mohamed Wiem Mkaouer - "Bridging the Gap: AI-Driven Software Testing and Quality Assurance"</td>
+          <td class="session">Mohamed Tounsi - "AI for DevOps: Accelerating Software Delivery with Intelligent Automation"</td>
+      </tr>
+      <tr>
+          <td>16:00 – 16:30</td>
+          <td class="break">Coffee Break</td>
+          <td class="break">Coffee Break</td>
+          <td class="break">Coffee Break</td>
+      </tr>
+      <tr>
+          <td>16:30 – 18:30</td>
+          <td class="session">Montassar Ben Messaoud - "AI-Driven Bug Management: From Detection to Resolution"</td>
+          <td class="session">Meriem Zhioua - "Generative AI in Software Engineering: From Code Generation to Automated Debugging"</td>
+          <td class="session">Closing Ceremony</td>
+      </tr>
+      <tr>
+          <td>18:30 – 19:30</td>
+          <td class="break">Welcome Reception and Networking</td>
+          <td class="break">Banquet</td>
+          <td class="break">Dinner</td>
+      </tr>
+      <tr>
+          <td>19:30 – 21:00</td>
+          <td colspan="3" class="break">Evening Social Event</td>
+      </tr>
+      
+   
+      
+  </body>
+</html>
