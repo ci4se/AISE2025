@@ -471,3 +471,77 @@ td {
   font-size: 14px;
   padding: 5px;
 }
+ /* Schedule styling *****/
+ table.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+table.schedule th,
+table.schedule td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+}
+
+table.schedule th {
+  background-color: #5909ee;
+  font-weight: bold;
+}
+
+.break {
+  background-color: #f2e5ff; 
+}
+
+.plenary {
+  background-color: #a9dfbf; 
+}
+
+.school {
+  background-color: #aed6f1; 
+}
+
+.industry {
+  background-color: #f9e79f; 
+}
+
+.lecture {
+  background-color: #f5cba7; 
+}
+
+.extra {
+  background-color: #e6b0aa; 
+}
+
+.legend-horizontal {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.legend-horizontal h3 {
+  margin-bottom: 10px;
+}
+
+.legend-horizontal .legend-item {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.legend-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.legend-box.plenary { background-color: #a9dfbf; }
+.legend-box.school  { background-color: #aed6f1; }
+.legend-box.industry { background-color: #f9e79f; }
+.legend-box.lecture { background-color: #f5cba7; }
+.legend-box.extra   { background-color: #e6b0aa; }
